@@ -52,8 +52,7 @@ function loadData() {
               y.push(rowContent[1]);
             });
             data = {xs: x, ys: y};
-            console.log(data);
-
+          
             // UI info
             const appDiv = document.getElementById("app");
             const message = document.createElement("p");

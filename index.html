@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>Text day at understand.ai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/deeplearn@latest"></script>
+<script src="demo.ts"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Start</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="app">
+
+    <h2 class="w3-wide">The Littlest Application With Deeplearn.js</h2>
+    <p class="w3-wide">(Ever possible!!)</p>
+
+    <p class="w3-opacity"><i>Karlsruhe, 9 March - Test day @ Understand.ai </i></p>
+    <img src="images/littleanimal.jpg" style="width:40%">
+    <p class="w3-center">This model tries to regress the values for the parameters of a cubic function. Please load your csv file: </p>
+
+    <form onsubmit="return loadData()" action="#" method="POST">
+        <b>Iteractions:</b> <input type="text" style="width:60px; height: 40px" id="interactions" class="w3-border" value="50"  placeholder="Interactions">
+        <input type="file" class="w3-button w3-black" id="file" style="height: 40px" >
+        <input class="w3-button w3-black" type="submit" value="Load Data" style="height: 40px" >
+
+    </form>
+    <br>
+    <button class="w3-button w3-black" onclick="train()">Train model</button>
+    <p id="interations-info"></p>
+
+  </div>
+
+
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="aboutme">
+    <h2 class="w3-wide w3-center">Who I am</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-user-circle" style="width:30px"> </i> Dave Canton<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: davijcanton@gmail.com<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Karlsruhe, Germany<br>
+
+      </div>
+
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/davi.canton.7"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/dvcanton"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://github.com/dvcanton"><i class="fa fa-github w3-hover-opacity"></i></a>
+</footer>
+
+<script>
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
